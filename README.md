@@ -5,10 +5,10 @@ Landing page institucional simples e responsiva para a Associação dos Estudant
 ## Estrutura
 
 - `index.html` — conteúdo e estrutura
-- `src`
-  |- `style.css` — visual e responsividade
-  |- `script.js` — menu mobile, animações e formulário demonstrativo
-  |- `estrutura.html` — incorporação com Canva
+- `/src`
+  |- `/css` — visual e responsividade
+  |- `/script` — menu mobile, animações e formulário demonstrativo
+  |- `/pages` — incorporação de páginas internas
 
 ## Como executar
 
