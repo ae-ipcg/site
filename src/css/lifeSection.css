@@ -1,0 +1,91 @@
+.student-life {
+  padding-top: 35px;
+  background: #fff;
+}
+
+.student-life-heading {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 50px;
+  align-items: start;
+  margin-bottom: 42px;
+}
+
+.student-life-heading h2 {
+  max-width: 720px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.student-life-heading > div:last-child > p {
+  max-width: 620px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.student-life-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  grid-template-rows: repeat(2, minmax(190px, 1fr));
+  gap: 17px;
+}
+
+.life-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #dce6f2;
+  isolation: isolate;
+}
+
+.life-card-tall {
+  grid-row: span 2;
+}
+
+.life-card::after {
+  position: absolute;
+  z-index: 0;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgba(8, 15, 26, 0.78));
+  content: "";
+}
+
+.life-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.life-card:hover img {
+  transform: scale(1.04);
+}
+
+.life-card figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 21px;
+  left: 22px;
+  display: grid;
+  gap: 7px;
+  color: white;
+}
+
+.life-card figcaption span {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.life-card figcaption strong {
+  max-width: 420px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  line-height: 1.2;
+}
